@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://ThoHi.github.io
+title: ThoHi
+tagline: Everyday life
+description: My new site
+paginate: 5
