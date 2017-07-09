@@ -259,16 +259,16 @@ jQuery.extend( jQuery.easing,
 		}());
 
 		// facebook
-		(function(){
+		/*(function(){
 			var appId = 414280305262678;
 			if(window.FB){
 				FB.init({ cookie: true, xfbml: true, appId: appId });
 			}else{
-				$.getScript("http://connect.facebook.net/ja_JP/all.js", function(){
+				$.getScript("http://connect.facebook.net/en_EN/all.js", function(){
 					FB.init({ cookie: true, xfbml: true, appId: appId });
 				});
 			};
-		}());
+		}());*/
 
 	});
 

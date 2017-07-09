@@ -23,7 +23,7 @@
 		}());
 
 		// facebook
-		(function(){
+		/*(function(){
 			var appId = 414280305262678;
 			if(window.FB){
 				FB.init({ cookie: true, xfbml: true, appId: appId });
@@ -32,7 +32,7 @@
 					FB.init({ cookie: true, xfbml: true, appId: appId });
 				});
 			};
-		}());
+		}());*/
 
 	});
 
