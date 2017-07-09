@@ -64,7 +64,7 @@ kramdown:
 permalink: /posts/:year-:month-:day-:title.html
 
 # all variables can be referred in templates
-title: Ubuntu Manual for Myanmar
+title: Ubuntu Manual
 author: Tho Hi 
 ga: UA-30944384-1
 description: 'Read with Myanmar Langugae'
