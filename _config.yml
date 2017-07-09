@@ -65,6 +65,6 @@ permalink: /posts/:year-:month-:day-:title.html
 
 # all variables can be referred in templates
 title: Ubuntu Manual for Myanmar
-author: Ubuntu Myanmar LoCo Team 
-ga:
+author: Tho Hi 
+ga: UA-30944384-1
 description: 'Read with Myanmar Langugae'
