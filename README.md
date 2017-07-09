@@ -1,27 +1,27 @@
-# Githubでjekyll使ってブログ
+# Blog using jekyll on Github
 
- [jekylog](http://fingaholic.github.com/ 'jekylog')
+ [ThoHi](https://github.com/ThoHi 'ThoHi')
 
-## 構成ファイル群
+## Configuration file group
 
 	.
-	├─ _includes // インクルードファイル
-	│  ├─ footer.html // フッター用
-	│  ├─ ga.html // Google Analytics用
-	│  ├─ head.html // headタグ用
-	│  ├─ header.html // ヘッダー用
-	├─ _layouts // レイアウトファイル
-	│  ├─ default.html // ページベース用
-	│  ├─ post.html // 投稿詳細ページ用
-	├─ _posts // 記事用マークダウンファイル
-	│  ├─ $YEAR-$MONTH-$DATE-$TITLE.$FORMAT // markdownかtextile
+	├─ _includes 
+	│  ├─ footer.html 
+	│  ├─ ga.html // Google Analytics
+	│  ├─ head.html // head
+	│  ├─ header.html 
+	├─ _layouts 
+	│  ├─ default.html 
+	│  ├─ post.html 
+	├─ _posts 
+	│  ├─ $YEAR-$MONTH-$DATE-$TITLE.$FORMAT // markdown,textile
 	├─ css // CSS
 	│  ├─ all.css
 	│  ├─ all.min.css
 	├─ fonts // Web font
 	│  ├─ chunkfive // Chunkfive 
 	│  ├─ droid // Droid 
-	├─ img // 画像
+	├─ img 
 	│  ├─ favicon.ico
 	│  ├─ logo1.png
 	│  ├─ logo2.png
@@ -40,21 +40,21 @@
 	│  ├─ _normalize.scss
 	│  ├─ _webfont.scss
 	│  ├─ all.scss
-	├─ tasks // gruntのカスタムタスク用
+	├─ tasks // For grunt's custom task
 	│  ├─ cssmin.js
 	│  ├─ sass.js
 	├─ .gitignore // .gitignore
-	├─ 404.html // 404用HTML
+	├─ 404.html 
 	├─ README.md // README.md
 	├─ Rakefile // Rakefile
-	├─ _config.yml // 基本設定
-	├─ about.html // アバウト用HTML
-	├─ archive.html // アーカイブ用HTML
-	├─ atom.xml // RSS用XML
-	├─ grunt.js // grunt用js
-	├─ index.html // トップページ用HTML
+	├─ _config.yml 
+	├─ about.html 
+	├─ archive.html 
+	├─ atom.xml // RSS used XML
+	├─ grunt.js 
+	├─ index.html 
 
-## 参考サイト
+## Reference site
 * [GitHub - mojombo/jekyll](https://github.com/mojombo/jekyll 'GitHub - mojombo/jekyll')
 * [CSS RADAR - jekyll](http://css.studiomohawk.com/jekyll/2011/06/11/jekyll/ 'CSS RADAR - jekyll')
 * [Big Sky - Jekyllで始める簡単ブログ](http://mattn.kaoriya.net/software/lang/ruby/20090409185248.htm 'Big Sky - Jekyllで始める簡単ブログ')
