@@ -1,0 +1,10 @@
+title: thohi.github.io Guide
+description: A guide hosted on GitHub Pages.
+theme: minima
+
+# Optional: Add a baseurl if the site is not at the root of the domain
+# baseurl: "/my-repository" # Example
+
+# Optional: Add other configurations as needed
+# markdown: kramdown # Default markdown processor
+# permalink: /:year/:month/:day/:title.html # Example permalink structure
