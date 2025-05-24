@@ -1,0 +1,183 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Variables
+$primary-color: #24292e;
+$accent-color: #0366d6;
+$background-color: #ffffff;
+$text-color: #24292e;
+$gray-light: #f6f8fa;
+$gray-medium: #e1e4e8;
+$container-width: 800px;
+
+// Base styles
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// Header
+.site-header {
+    background-color: $background-color;
+    border-bottom: 1px solid $gray-medium;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+// Navigation
+.site-nav {
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-weight: 500;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+// Main content
+.site-content {
+    min-height: calc(100vh - 200px);
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+    line-height: 1.25;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+
+p {
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Posts
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $gray-medium;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.post-title {
+    margin-bottom: 0.5rem;
+    
+    a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+// Footer
+.site-footer {
+    background-color: $gray-light;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid $gray-medium;
+}
+
+// Code blocks
+pre, code {
+    background-color: $gray-light;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    
+    code {
+        background: none;
+        padding: 0;
+    }
+}
+
+// Responsive
+@media (max-width: 600px) {
+    .site-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-nav {
+        margin-top: 1rem;
+        
+        a {
+            margin: 0 0.75rem;
+        }
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+} 

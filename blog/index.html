@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog-index">
+    <h1>Blog Posts</h1>
+    
+    <div class="post-categories">
+        <span>Browse by topic:</span>
+        {% assign tags = site.tags | sort %}
+        {% for tag in tags %}
+        <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+        {% endfor %}
+    </div>
+
+    <div class="post-list">
+        {% for post in site.posts %}
+        <article class="post-item">
+            <h2 class="post-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <div class="post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%B %-d, %Y" }}
+                </time>
+                {% if post.tags.size > 0 %}
+                •
+                {% for tag in post.tags %}
+                <span class="post-tag">{{ tag }}</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+            {% if post.excerpt %}
+            <div class="post-excerpt">
+                {{ post.excerpt }}
+            </div>
+            {% endif %}
+            <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+        </article>
+        {% endfor %}
+    </div>
+</div> 
