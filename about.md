@@ -83,6 +83,13 @@ Hello! I'm ThoHi, a technology enthusiast and data scientist. I'm passionate abo
           </div>
         </div>
       </div>
+      <div class="slide">
+        <div class="certificate-box">
+          <div class="image-container">
+            <img src="/assets/images/certificates/EO college ML for EO.png" alt="EO College ML for Earth Observation">
+          </div>
+        </div>
+      </div>
     </div>
     <button class="slider-nav prev" onclick="moveSlide(-1)">❮</button>
     <button class="slider-nav next" onclick="moveSlide(1)">❯</button>
