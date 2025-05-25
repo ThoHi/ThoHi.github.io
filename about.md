@@ -11,8 +11,7 @@ Hello! I'm ThoHi, a technology enthusiast and data scientist. I'm passionate abo
 ## Skills
 
 - Data Science & Analysis
-- Web Development
-- GIS & Mapping
+- GIS & Remote Sensing
 - Programming (Python, JavaScript, R)
 
 ## Projects
