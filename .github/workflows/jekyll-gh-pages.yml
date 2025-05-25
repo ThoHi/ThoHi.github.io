@@ -27,8 +27,17 @@ jobs:
           bundler-cache: true
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: |
+          bundle install
+          bundle update
+      - name: Debug directory
+        run: |
+          pwd
+          ls -la
+          bundle show minima
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
