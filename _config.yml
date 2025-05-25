@@ -1,17 +1,14 @@
 title: ThoHi's Website
-email: ye50351@gmail.com
-description: >-
-  Welcome to my personal website where I share my thoughts and experiences 
-  in technology and data science.
+description: My personal website
 baseurl: ""
 url: "https://thohi.github.io"
+github_username: ThoHi
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
 
 # Site settings
 author:
@@ -19,7 +16,6 @@ author:
   email: ye50351@gmail.com
 
 # Social links
-github_username: ThoHi
 # linkedin_username: your-linkedin
 # twitter_username: your-twitter
 
