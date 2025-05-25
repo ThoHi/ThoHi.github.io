@@ -2,11 +2,14 @@ title: ThoHi's Website
 description: My personal website
 baseurl: ""
 url: "https://thohi.github.io"
-github_username: ThoHi
 
 # Build settings
 markdown: GFM
 theme: minima
+safe: true
+lsi: false
+incremental: false
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -23,7 +26,7 @@ author:
 # Build settings
 permalink: /blog/:year/:month/:day/:title/
 
-# Exclude files from processing
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -32,6 +35,10 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - .git
+  - .github
+  - .gitignore
+  - .ruby-version
 
 # Collections
 collections:
