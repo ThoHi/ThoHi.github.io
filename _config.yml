@@ -1,19 +1,19 @@
 title: ThoHi's Website
-description: My personal website
-domain: thohi.github.io
-url: https://thohi.github.io
+description: Personal website showcasing projects, thoughts, and experiences in technology and data science.
 baseurl: ""
+url: "https://thohi.github.io"
 
 # Build settings
-markdown: GFM
+markdown: kramdown
 theme: minima
-safe: true
-lsi: false
-incremental: false
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Header pages for navigation
+header_pages:
+  - about.md
+  - projects.html
 
 # Site settings
 author:
@@ -21,28 +21,23 @@ author:
   email: ye50351@gmail.com
 
 # Social links
+github_username: ThoHi
 # linkedin_username: your-linkedin
 # twitter_username: your-twitter
 
 # Build settings
 permalink: /blog/:year/:month/:day/:title/
 
-# Exclude from processing
+# Exclude files from processing
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
+  - .git/
+  - .gitignore
   - Gemfile
   - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .git
-  - .github
-  - .gitignore
-  - .ruby-version
+  - README.md
+  - vendor/
+  - .jekyll-cache/
+  - _site/
 
 # Collections
 collections:
@@ -50,6 +45,6 @@ collections:
     output: true
     permalink: /blog/:year/:month/:day/:title/
 
-# Optional: Add other configurations as needed
-# markdown: kramdown
-# permalink: /:year/:month/:day/:title/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
