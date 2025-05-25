@@ -1,19 +1,30 @@
 ---
 layout: default
-title: Welcome to the Guide
+title: Home
 ---
 
-# Welcome to the thohi.github.io Guide
+# Welcome to ThoHi's Website
 
-This site hosts a guide related to [briefly describe the purpose of the guide, e.g., "using X tool", "learning Y technology", "project Z documentation"].
+A personal website focused on technology, data science, and software development.
 
-Explore the sections to learn more.
+## Recent Posts
 
-## Getting Started
+<ul class="post-list">
+  {% for post in site.posts limit:5 %}
+    <li class="post-item">
+      <h2 class="post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <div class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
+      {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
-[Add a brief intro or link to a getting started page/post if available later]
+## About
 
-## Latest Updates
+I'm a technology enthusiast and data scientist working on various projects involving data analysis, visualization, and software development. My work focuses on creating practical solutions to real-world problems.
 
-[This section can list recent posts or important pages once content is added]
----
+[Learn more about me →](/about)

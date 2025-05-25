@@ -1,10 +1,49 @@
-title: thohi.github.io Guide
-description: A guide hosted on GitHub Pages.
-theme: minima
+title: ThoHi's Website
+description: >-
+  Personal website showcasing projects, thoughts, and experiences in technology and data science.
+baseurl: ""
+url: "https://thohi.github.io"
 
-# Optional: Add a baseurl if the site is not at the root of the domain
-# baseurl: "/my-repository" # Example
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+  sass_dir: _sass
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site settings
+author:
+  name: ThoHi
+  email: ye50351@gmail.com
+  url: https://thohi.github.io
+
+# Social links
+github_username: ThoHi
+# linkedin_username: your-linkedin
+# twitter_username: your-twitter
+
+# Build settings
+permalink: /blog/:year/:month/:day/:title/
+
+# Exclude files from processing
+exclude:
+  - .git/
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .jekyll-cache/
+  - _site/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
 
 # Optional: Add other configurations as needed
-# markdown: kramdown # Default markdown processor
-# permalink: /:year/:month/:day/:title.html # Example permalink structure
+# markdown: kramdown
+# permalink: /:year/:month/:day/:title/
