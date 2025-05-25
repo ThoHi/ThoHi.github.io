@@ -1,11 +1,10 @@
 ---
 layout: home
-title: Home
 ---
 
-# Welcome to ThoHi's Website
+# Welcome to My Website
 
-This is my personal website where I share my thoughts and experiences in technology and data science.
+Hello! I'm ThoHi, and this is my personal website. Here I share my experiences and thoughts about technology and data science.
 
 ## Recent Posts
 
