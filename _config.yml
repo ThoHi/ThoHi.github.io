@@ -1,16 +1,14 @@
 title: ThoHi's Website
-description: >-
-  Personal website showcasing projects, thoughts, and experiences in technology and data science.
+description: Personal website showcasing projects, thoughts, and experiences in technology and data science.
 baseurl: ""
 url: "https://thohi.github.io"
 
 # Build settings
 markdown: kramdown
-remote_theme: jekyll/minima
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
 # Site settings
 author:
