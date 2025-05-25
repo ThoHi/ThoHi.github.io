@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import "{{ site.theme }}";
+
 // Variables
 $primary-color: #24292e;
 $accent-color: #0366d6;
@@ -179,5 +181,24 @@ pre {
 
     .container {
         padding: 0 15px;
+    }
+}
+
+// Add any custom CSS here
+.post-list {
+    list-style: none;
+    padding: 0;
+    
+    .post-item {
+        margin-bottom: 2em;
+    }
+    
+    .post-title {
+        margin-bottom: 0.5em;
+    }
+    
+    .post-meta {
+        color: #666;
+        font-size: 0.9em;
     }
 } 
