@@ -1,7 +1,8 @@
 title: ThoHi's Website
 description: My personal website
+domain: thohi.github.io
+url: https://thohi.github.io
 baseurl: ""
-url: "https://thohi.github.io"
 
 # Build settings
 markdown: GFM
@@ -28,9 +29,12 @@ permalink: /blog/:year/:month/:day/:title/
 
 # Exclude from processing
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
