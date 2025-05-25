@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
 # Welcome to ThoHi's Website
 
-A personal website focused on technology, data science, and software development.
+This is my personal website where I share my thoughts and experiences in technology and data science.
 
 ## Recent Posts
 

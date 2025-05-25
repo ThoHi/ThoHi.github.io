@@ -15,34 +15,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Install dependencies
-        run: |
-          bundle install
-          bundle update
-      - name: Debug directory
-        run: |
-          pwd
-          ls -la
-          bundle show minima
       - name: Build with Jekyll
-        run: bundle exec jekyll build --trace
-        env:
-          JEKYLL_ENV: production
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
+  # Deployment job
   deploy:
     environment:
       name: github-pages
