@@ -5,10 +5,11 @@ url: "https://thohi.github.io"
 github_username: ThoHi
 
 # Build settings
-markdown: kramdown
+markdown: GFM
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Site settings
 author:
@@ -24,14 +25,13 @@ permalink: /blog/:year/:month/:day/:title/
 
 # Exclude files from processing
 exclude:
-  - .git/
-  - .gitignore
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - vendor/
-  - .jekyll-cache/
-  - _site/
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Collections
 collections:
